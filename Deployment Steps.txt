@@ -1,0 +1,28 @@
+The following are the steps to deploy the object REP01 Multilevel Pegging Report code fix with change request
+
+
+1.Command to upload packages.
+
+Move the XXNBTY_MSC_REP01_MULTI_PEGG_PKG.pks, XXNBTY_MSC_REP01_PEGG_DEM_PKG.pks, XXNBTY_MSC_REP01_MULTI_PEGG_PKG.pkb and XXNBTY_MSC_REP01_PEGG_DEM_PKG.pkb to /u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql using WINSCP and execute the command below in the UNIX.
+
+NOTE: You may use apps user and apps password. Please enter the "& Display" if the SQL PLuS need the value for display. Please see example below.
+
+EXAMPLE:
+
+SQL> @/u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql/XXNBTY_MSC_REP01_MULTI_PEGG_PKG.pks
+Enter value for display: & Display
+ 
+
+COMMAND:
+
+
+sqlplus -s USERNAME/PASSWORD
+
+@/u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql/XXNBTY_MSC_REP01_MULTI_PEGG_PKG.pks
+
+@/u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql/XXNBTY_MSC_REP01_PEGG_DEM_PKG.pks
+
+@/u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql/XXNBTY_MSC_REP01_MULTI_PEGG_PKG.pkb
+
+@/u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/sql/XXNBTY_MSC_REP01_PEGG_DEM_PKG.pkb
+
